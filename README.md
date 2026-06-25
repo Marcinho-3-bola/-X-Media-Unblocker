@@ -18,7 +18,7 @@ extensão:
 
 Não precisa mais copiar link, mandar pro Discord, esperar o embed e abrir.
 
-## 🚀 Instalação
+##  Instalação
 
 ### Via Chrome Web Store
 Disponível na [Chrome Web Store](#).
