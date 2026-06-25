@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "X Media Unblocker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detecta midia bloqueada no X/Twitter e substitui pelo conteudo real usando dados publicos do fxtwitter.",
   "host_permissions": [
     "https://x.com/*",

@@ -45,20 +45,14 @@
 
     articles.forEach((article) => {
       const text = article.innerText || "";
+      // Frases inteiras e especificas do aviso de bloqueio etario do X,
+      // nao palavras soltas (evita falso positivo em "realidade", "comunidade" etc)
       const hasSensitiveWarning =
-        /conteúdo sensível|sensitive content|idade|age-restricted|esta mídia pode conter|this media may contain/i.test(
+        /conteúdo sensível|sensitive content|verificar sua idade|age verification|verify your age|este conteúdo pode não ser adequado|esta mídia pode conter conteúdo sensível|this media may contain sensitive content/i.test(
           text
         );
 
-      // imagens que o X tenta carregar mas falham (alt genérico, sem src real, etc)
-      const brokenImg = article.querySelector('img[src=""], img:not([src])');
-
-      // botao "ver" / "view" tipico do aviso de sensivel
-      const viewButton = Array.from(article.querySelectorAll("div[role='button'], span")).find(
-        (n) => /^(ver|view)$/i.test(n.textContent?.trim() || "")
-      );
-
-      if (hasSensitiveWarning || brokenImg || viewButton) {
+      if (hasSensitiveWarning) {
         blocked.push(article);
       }
     });

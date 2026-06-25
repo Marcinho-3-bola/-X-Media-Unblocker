@@ -18,17 +18,14 @@ extensão:
 
 Não precisa mais copiar link, mandar pro Discord, esperar o embed e abrir.
 
-##  Instalação
+## Instalação (modo desenvolvedor)
 
-### Via Chrome Web Store
-Disponível na [Chrome Web Store](#).
-
-### Manualmente (modo desenvolvedor)
-1. Baixe o [release](https://github.com/Marcinho-3-bola/-X-Media-Unblocker/releases) mais recente.
-2. Acesse `chrome://extensions` no Navegador.
-3. Ative o **Modo do desenvolvedor** (canto superior direito).
-4. Clique em **"Carregar sem compactação"**.
-5. Selecione a pasta `x-unblock-ext`.
+1. Baixe e descompacte esta pasta em algum lugar do seu computador
+2. Abra o Chrome e vá em `chrome://extensions`
+3. Ative o "Modo do desenvolvedor" (canto superior direito)
+4. Clique em "Carregar sem compactação" (Load unpacked)
+5. Selecione a pasta `x-unblock-ext`
+6. Abra ou recarregue o x.com — a extensão já começa a varrer a página
 
 ## Caso algo não seja desbloqueado automaticamente
 
